@@ -20,7 +20,7 @@ document.write("Score of " + students[0] + " is " + obtainedMarks[0] + " Percent
 document.write("Score of " + students[1] + " is " + obtainedMarks[0] + " Percentage " + johnPercentage + "%" + "<br>");
 document.write("Score of " + students[2] + " is " + obtainedMarks[0] + " Percentage " + tonyPercentage + "%");
 
-*/
+
 //Question: 3
 var colors = ["Green", "yellow", "red"];
 alert(colors);
@@ -47,3 +47,10 @@ var indexPositionToDeleteElements = prompt("At what position you want to delete 
 var numbrOfElementsToDelete = prompt("How many elements to delete");
 colors.splice(indexPositionToDeleteElements,numbrOfElementsToDelete);
 alert(colors);
+
+*/
+//Question: 4
+var cities = ["Karachi", "Lahore", "Islamabad", "Quettta", "Peshawar"];
+var selectedCities = cities.slice(2, 4);
+alert("Cities List: " + cities);
+alert("Selected cities list: " + selectedCities);
