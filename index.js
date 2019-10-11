@@ -55,10 +55,40 @@ var selectedCities = cities.slice(2, 4);
 alert("Cities List: " + cities);
 alert("Selected cities list: " + selectedCities);
 
-*/
+
 //Question: 6
 var aCities = ["Karachi", "Lahore", "Islamabad", "Faisalabad"];
 var o = ["th","st","nd","rd"];
 document.write("1"+o[1]+" choice is "+aCities[0]+"<br>");
 document.write("2"+o[2]+" choice is "+aCities[1]+"<br>");
 document.write("3"+o[3]+" choice is "+aCities[2]);
+
+*/
+//Question: 8
+var counting = [];
+var reverseCounting = [];
+var even = [];
+var odd = [];
+var series = [];
+var num = 1;
+revNum = 15;
+for(var i=0; i<15; i++){
+    counting[i] = num;
+    reverseCounting[i] = revNum;
+    num++;
+    revNum--;
+    if(counting[i] % 2 == 0){
+        even[i] = counting[i];
+        series[i] = counting[i]+"k";
+    }else if(counting[i] % 2 == 1){
+        odd[i] = counting[i];
+    }   
+}
+
+
+document.write("Counting: " + counting);
+document.write("<br>" + "Reverse Counting: " + reverseCounting);
+document.write("<br>" + "Even: " + even);
+document.write("<br>" + "Odd: " + odd);
+document.write("<br>" + "Series: " + series);
+
