@@ -63,7 +63,7 @@ document.write("1"+o[1]+" choice is "+aCities[0]+"<br>");
 document.write("2"+o[2]+" choice is "+aCities[1]+"<br>");
 document.write("3"+o[3]+" choice is "+aCities[2]);
 
-*/
+
 //Question: 8
 var counting = [];
 var reverseCounting = [];
@@ -92,3 +92,16 @@ document.write("<br>" + "Even: " + even);
 document.write("<br>" + "Odd: " + odd);
 document.write("<br>" + "Series: " + series);
 
+*/
+// Question: 9
+var numbers = [24, 53, 78, 91, 12];
+var largeNum = 0;
+for(i = 0; i < numbers.length; i++){
+    if(numbers[i] >= largeNum){
+        largeNum = numbers[i];
+    }else if(numbers[i] <= largeNum){
+        largeNum = largeNum;
+    }
+}
+document.write("Array items: " + numbers);
+document.write("<br>" + "The Largest Number: " + largeNum);
