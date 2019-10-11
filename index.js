@@ -48,9 +48,17 @@ var numbrOfElementsToDelete = prompt("How many elements to delete");
 colors.splice(indexPositionToDeleteElements,numbrOfElementsToDelete);
 alert(colors);
 
-*/
+
 //Question: 4
 var cities = ["Karachi", "Lahore", "Islamabad", "Quettta", "Peshawar"];
 var selectedCities = cities.slice(2, 4);
 alert("Cities List: " + cities);
 alert("Selected cities list: " + selectedCities);
+
+*/
+//Question: 6
+var aCities = ["Karachi", "Lahore", "Islamabad", "Faisalabad"];
+var o = ["th","st","nd","rd"];
+document.write("1"+o[1]+" choice is "+aCities[0]+"<br>");
+document.write("2"+o[2]+" choice is "+aCities[1]+"<br>");
+document.write("3"+o[3]+" choice is "+aCities[2]);
