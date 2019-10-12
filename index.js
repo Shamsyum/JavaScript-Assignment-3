@@ -56,6 +56,18 @@ alert("Cities List: " + cities);
 alert("Selected cities list: " + selectedCities);
 
 
+// Question: 5
+var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+    for(i=0; i<arr1.length; i++){
+        for(j=0; j<arr1.length; j++){
+            if(arr1[i] === arr1[j]){
+                arr1.splice(arr1[j],arr1[j+1]);
+            }
+        }
+    }
+console.log(arr1);
+
+
 //Question: 6
 var aCities = ["Karachi", "Lahore", "Islamabad", "Faisalabad"];
 var o = ["th","st","nd","rd"];
@@ -92,7 +104,7 @@ document.write("<br>" + "Even: " + even);
 document.write("<br>" + "Odd: " + odd);
 document.write("<br>" + "Series: " + series);
 
-*/
+
 // Question: 9
 var numbers = [24, 53, 78, 91, 12];
 var largeNum = 0;
@@ -105,3 +117,6 @@ for(i = 0; i < numbers.length; i++){
 }
 document.write("Array items: " + numbers);
 document.write("<br>" + "The Largest Number: " + largeNum);
+
+*/
+
