@@ -76,6 +76,23 @@ document.write("2"+o[2]+" choice is "+aCities[1]+"<br>");
 document.write("3"+o[3]+" choice is "+aCities[2]);
 
 
+//Question: 7
+var a = [10,20,4,40,60,70];
+var b = [1,2,3,4,5,6,7,8,9,10];
+var unionOfAB = [];
+unionOfAB = a.slice(0,a.length);
+for(var i=0; i<b.length; i++){
+    for(var j=0; j<unionOfAB.length; j++){
+        if(b[i] > unionOfAB[j]){
+            unionOfAB.splice(unionOfAB[j],0,b[i]);
+        }else if(b[i] < unionOfAB[j]){
+            unionOfAB.splice(unionOfAB[j-2],0,b[i]);
+        }
+    }
+}
+document.write(unionOfAB);
+
+
 //Question: 8
 var counting = [];
 var reverseCounting = [];
@@ -120,3 +137,19 @@ document.write("<br>" + "The Largest Number: " + largeNum);
 
 */
 
+// Question: 10
+var a = [20,53,78,4,91,12];
+var arangedA = [];
+
+for(var i=0; i<a.length; i++){
+    for(var j=0; j<arangedA.length; j++){
+        if(arangedA.length == 0){
+            arangedA.push(a[i]);
+        }else if(a[i] >= arangedA[j]){
+            arangedA.splice(arangedA[j],0,a[i]);
+        }else if(a[i] < arangedA[j]){
+            arangedA.splice(arangedA[j-1],0,a[i]);
+        }
+    }
+}
+console.log(arangedA);
